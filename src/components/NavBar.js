@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Container, Nav, Image } from 'react-bootstrap';
 import logo from '../assets/logo.png';
+import CustomModal from "./CustomModal";
 
 const links = [
     { name: 'About Us', link: '/' },
@@ -10,7 +11,7 @@ const links = [
     { name: 'Shelter For Refugees', link: '/shelter' },
     { name: 'Our Team', link: '/team' },
     { name: 'Our Projects', link: '/projects' },
-    { name: 'Blog', link: '/blog' },
+    // { name: 'Blog', link: '/blog' },
     { name: 'Support Us', link: '/support' },
     { name: 'Media About Us', link: '/media' },
     { name: 'Contacts', link: '/contacts' }
@@ -39,6 +40,7 @@ const NavBar = () => {
                                 {item.name}
                             </NavLink>
                         })}
+                        <CustomModal />
                     </Nav>
                 </Navbar.Collapse>
             </Container>

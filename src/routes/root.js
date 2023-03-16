@@ -7,6 +7,7 @@ import Projects from '../components/Projects';
 import Blog from '../components/Blog';
 import Supporting from '../components/Supporting';
 import AboutUs from '../components/AboutUs';
+import Contacts from "../components/Contacts";
 
 export default function Root() {
     return (
@@ -19,6 +20,7 @@ export default function Root() {
         <Route path='projects' element={<Projects />}>Our Projects</Route>
         <Route path='blog' element={<Blog />}>Blog</Route>
         <Route path='support' element={<Supporting />}>Support Us</Route>
+        <Route path='contacts' element={<Contacts />}>Contacts</Route>
       </Routes>
     );
 };

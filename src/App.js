@@ -1,4 +1,3 @@
-import CustomModal from './components/CustomModal';
 import Navbar from './components/NavBar';
 import Root from './routes/root';
 
@@ -8,7 +7,6 @@ function App() {
     <div>
       <Navbar />
       <Root />
-      <CustomModal />
     </div>
   );
 }

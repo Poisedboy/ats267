@@ -19,7 +19,12 @@ const Banner = () => {
     console.log(window.screen.width);
 
     return (
-        <Carousel controls={false} variant='dark' interval={3000} fade>
+        <Carousel
+            controls={false}
+            variant='dark'
+            interval={3000}
+            fade
+        >
             <Carousel.Item>
                 <Image src={picture} fluid={true} style={smallWidth ? { height: '50vh', minWidth: '100vw', objectFit: 'cover' }
                     : { height: '100vh', minWidth: '100vw', objectFit: 'cover' }} />

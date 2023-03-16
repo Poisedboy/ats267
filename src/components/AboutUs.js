@@ -5,6 +5,8 @@ import Divider from "./Divider";
 import dividerPicture from '../assets/portal2.jpg';
 import portrait from '../assets/portrait.jpg';
 import building from '../assets/building.jpg';
+import Contacts from "./Contacts";
+import dividerPicture2 from '../assets/bg.jpg';
 
 const AboutUs = () => {
     return (
@@ -23,7 +25,7 @@ const AboutUs = () => {
             </Container>
             <Divider dividerPicture={dividerPicture} />
             <Container style={{marginTop: '15px'}}>
-            <Image src={building} alt="Building" style={{ width: '50%', maxHeight: '300px', objectFit: 'cover', float: 'right', margin: '5px'}} />
+                <Image src={building} alt="Building" style={{ width: '50%', maxHeight: '300px', objectFit: 'cover', float: 'right', margin: '5px'}} />
                 <p>
                     Together, they registered a Charity Foundation ATS 267, the main goal of which was
                     helping people to create their art by providing a space, a community of soulmates
@@ -32,8 +34,10 @@ const AboutUs = () => {
                     At the same time with painting the walls, we started a makeover of this building.
                     We changed all sewers, installed a modern heating system, video surveillance and carried out
                     other engineering works.
-                </p>
+                </p>    
             </Container>
+            <Divider dividerPicture={dividerPicture2} />
+            <Contacts />
         </>
     )
 };
