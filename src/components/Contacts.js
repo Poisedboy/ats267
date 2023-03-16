@@ -5,11 +5,12 @@ import facebook from '../assets/facebook.png';
 import phone from '../assets/phone.png';
 import email from '../assets/email.png';
 
-const Contacts = () => {
+const Contacts = ({children}) => {
     return (
         <>
             <Container style={{marginTop: '85px'}}>
                 <h1 style={{ textAlign: 'center', textTransform: 'uppercase' }}>Contacts</h1>
+                {children}
                 <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', height: '200px'}}>
                     <a href='https://www.instagram.com/atc.267/'>
                         <img
@@ -32,7 +33,7 @@ const Contacts = () => {
                         style={{maxWidth: '45px', maxHeight: '45px'}}
                     />
                     </a>
-                    <a href='atc2677@gmail.com'>
+                    <a href='mailto:atc2677@gmail.com'>
                     <img
                         src={email}
                         alt='mail'
