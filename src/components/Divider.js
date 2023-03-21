@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 
-const Divider = ({dividerPicture}) => {
+const Divider = ({ dividerPicture }) => {
+    const [mobileOpen, setMobileOpen] = useState(false);
+
+    useEffect(() => {
+        if (window.innerWidth < 500) {
+            setMobileOpen(prevState => !prevState);
+        };
+    }, []);
+
     return (
         <div>
-            <Image src={dividerPicture} alt='Divider Picture' style={{ width: '100%', height: '200px', objectFit: 'cover'}} />
+            <Image src={dividerPicture} alt='Divider Picture' style={mobileOpen ? { width: '100%', height: '70px', objectFit: 'cover'} : { width: '100%', height: '110px', objectFit: 'cover'}} />
         </div>
     )
 };
