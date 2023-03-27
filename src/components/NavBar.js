@@ -40,9 +40,9 @@ const NavBar = () => {
                                 {item.name}
                             </NavLink>
                         })}
-                        <CustomModal />
                     </Nav>
                 </Navbar.Collapse>
+                <CustomModal />
             </Container>
         </Navbar>
     )
