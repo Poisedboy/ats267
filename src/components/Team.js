@@ -1,8 +1,51 @@
 import React from 'react';
+import { Card, Container } from 'react-bootstrap';
+import instagramIcon from '../assets/instagram.png';
+import rrriott from '../assets/team/rrriott.png';
+import olexander from '../assets/team/olexander.jpg';
+import natalia from '../assets/team/natalia.jpg';
+import maryna from '../assets/team/maryna.png';
+import TeamOffCanvas from './buttons/TeamModal';
+
+const team = [
+    { id: 1, name: 'Arsenty', position: 'CEO and idea creator of ATS 267', instagram: 'https://www.instagram.com/rrriott/', photo: rrriott, text: 'Before the war began, Arsenty went on a big trip to Asia. At the moment, he supports our activity and the Ukrainian Armed Forces remotely with donations.' },
+    { id: 2, name: 'Aleksandr', position: 'CEO and a director of ATS 267', instagram: 'https://www.instagram.com/effulgenzy/', photo: olexander, text: 'CEO and a director of ATS 267. Aleksander is managing our place 24/7 hours. He’s responsible for creating art and content for ATS 267, hosting refugees, cooperation with partners, media and other administrative questions.' },
+    { id: 3, name: 'Natallia', position: 'A volunteer. Joined our team in February, 2022 when we opened a refugee center', instagram: 'https://www.instagram.com/lookat.nat/', photo: natalia, text: 'A volunteer. Joined our team in February, 2022 when we opened a refugee center. At the moment, Natallia is responsible for collaboration with partners,  sending humanitarian aid to people in need, fundraising, events organization and social media pages of ATS 267.' },
+    { id: 4, name: 'Maryna', position: 'A volunteer. Joined our team as an artist in 2021', instagram: 'https://www.instagram.com/msfranchesko/', photo: maryna, text: 'A volunteer. Joined our team as an artist in 2021. When the war began, Maryna became a volunteer to provide assistance to refugees coming to ATS 267 and to people in need. Maryna is responsible for working with refugees and volunteer centers.' }
+];
 
 const Team = () => {
     return (
-        <div>Team</div>
+        <>
+            <Container style={{ marginTop: '85px' }}>
+                <h1 className='d-flex justify-content-center'>Our Team</h1>
+                <div className='d-flex flex-wrap justify-content-center'>
+                    {team.map(m => {
+                        return (
+                            <Card key={m.id} style={{width: '18rem', marginRight: '10px', marginBottom: '10px'}}>
+                                <Card.Img style={{height: '18rem', objectFit: 'cover'}} src={m.photo} />
+                                <Card.Title style={{textAlign: 'center'}}>{m.name}</Card.Title>
+                                <div className='d-flex justify-content-around' style={{margin: '5px'}}>
+                                    <a href={m.instagram}>
+                                        <img
+                                            src={instagramIcon}
+                                            alt='instagram'
+                                            style={{maxWidth: '45px', maxHeight: '45px'}}
+                                        />
+                                    </a>
+                                    <TeamOffCanvas
+                                        name={m.name}
+                                        text={m.text}
+                                        position={m.position}
+                                        photo={m.photo}
+                                    />
+                                </div>
+                            </Card>
+                        )
+                    })}
+                </div>
+            </Container>
+        </>
     );
 };
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Container, Nav, Image } from 'react-bootstrap';
 import logo from '../assets/logo.png';
-import CustomModal from "./CustomModal";
+import CustomModal from "./buttons/CustomModal";
 
 const links = [
     { name: 'About Us', link: '/' },

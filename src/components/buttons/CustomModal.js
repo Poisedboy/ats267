@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
-import Supporting from "./Supporting";
+import Supporting from "../Supporting";
 
 const CustomModal = () => {
     const [show, setShow] = useState(false);
