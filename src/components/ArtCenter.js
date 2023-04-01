@@ -12,20 +12,20 @@ const projects = [
 ]
 
 const ArtCenter = () => {
-
+    // 
     return (
         <>
             <Container style={{marginTop: '80px', fontSize: '1.1rem'}}>
                 <h1 className='d-flex justify-content-center'>Art Center</h1>
-                <Image src={enter} alt='Enter' style={{ width: '50%', maxHeight: '300px', objectFit: 'cover', float: 'right', margin: '5px'}} />
+                <Image src={enter} alt='enter' style={{ width: '50%', maxHeight: '300px', objectFit: 'cover', float: 'right', margin: '5px'}} />
                 <p style={{margin: '5px', }}>
                     When you come into our building, you’ll immediately appear in an art gallery. 
                     Artworks in ATS 267 are everywhere. The heart of our space is Toned Gallery. 
                     It’s a project of our CEO, Aleksandr Zykov. 
-                </p>
+                </p>           
             </Container>
             <Divider dividerPicture={pictureDivider} />
-            <Container style={{marginTop: '15px'}}>
+            <Container style={{ marginTop: '15px' }}>
                 <Image src={launch} alt="launch" style={{ width: '50%', maxHeight: '300px', objectFit: 'cover', float: 'left', margin: '5px'}} />
                 <p>
                     Aleksandr is a post-modernism artist from Lviv. 
