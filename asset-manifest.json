@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ats267/static/css/main.93a0497a.css",
-    "main.js": "/ats267/static/js/main.2e4b6bb5.js",
+    "main.js": "/ats267/static/js/main.bff51225.js",
     "static/media/building.jpg": "/ats267/static/media/building.ab0e31a549235a3da931.jpg",
     "static/media/olexander.jpg": "/ats267/static/media/olexander.66055435b796ddc8b2d1.jpg",
     "static/media/launch-zone.jpg": "/ats267/static/media/launch-zone.6e3844c0d2652290de1c.jpg",
@@ -22,10 +22,10 @@
     "static/media/UΛ._Ukrainian_Radio.png": "/ats267/static/media/UΛ._Ukrainian_Radio.b26bb87b4e698a00d245.png",
     "index.html": "/ats267/index.html",
     "main.93a0497a.css.map": "/ats267/static/css/main.93a0497a.css.map",
-    "main.2e4b6bb5.js.map": "/ats267/static/js/main.2e4b6bb5.js.map"
+    "main.bff51225.js.map": "/ats267/static/js/main.bff51225.js.map"
   },
   "entrypoints": [
     "static/css/main.93a0497a.css",
-    "static/js/main.2e4b6bb5.js"
+    "static/js/main.bff51225.js"
   ]
 }
