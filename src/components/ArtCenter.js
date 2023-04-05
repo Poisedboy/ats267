@@ -12,7 +12,6 @@ const projects = [
 ]
 
 const ArtCenter = () => {
-    // 
     return (
         <>
             <Container style={{marginTop: '80px', fontSize: '1.1rem'}}>

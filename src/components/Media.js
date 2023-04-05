@@ -18,7 +18,7 @@ const Media = () => {
             setMobile(!mobile);
         }
     }, []);
-    console.log(mobile);
+    
     return (
         <>
             <Container style={{ marginTop: '80px' }}>

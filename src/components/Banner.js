@@ -16,8 +16,6 @@ const Banner = () => {
         widthHandler();
     }, [setSmallWidth]);
 
-    console.log(window.screen.width);
-
     return (
         <Carousel
             controls={false}
@@ -29,7 +27,7 @@ const Banner = () => {
                 <Image src={picture} fluid={true} style={smallWidth ? { height: '50vh', minWidth: '100vw', objectFit: 'cover' }
                     : { height: '100vh', minWidth: '100vw', objectFit: 'cover' }} />
                 <Carousel.Caption style={{ padding: '5px', backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: '20px'}}>
-                    <h3>Ats267</h3>
+                    <h3>ATS 267</h3>
                     <p>ATS 267 is an art space and a charity foundation based in Lviv, Ukraine.</p>
                 </Carousel.Caption>
             </Carousel.Item>
