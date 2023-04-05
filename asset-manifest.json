@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ats267/static/css/main.93a0497a.css",
-    "main.js": "/ats267/static/js/main.ed6d3760.js",
+    "main.js": "/ats267/static/js/main.00fb02a4.js",
     "static/media/building.jpg": "/ats267/static/media/building.ab0e31a549235a3da931.jpg",
     "static/media/olexander.jpg": "/ats267/static/media/olexander.66055435b796ddc8b2d1.jpg",
     "static/media/launch-zone.jpg": "/ats267/static/media/launch-zone.6e3844c0d2652290de1c.jpg",
@@ -11,7 +11,6 @@
     "static/media/rrriott.png": "/ats267/static/media/rrriott.2a3fae263ed4585f743f.png",
     "static/media/maryna.png": "/ats267/static/media/maryna.820a420a67065fbb5a85.png",
     "static/media/logo.png": "/ats267/static/media/logo.3790a81187e030879696.png",
-    "static/media/geometry1.jpg": "/ats267/static/media/geometry1.a574a421f69454973118.jpg",
     "static/media/portal1.jpg": "/ats267/static/media/portal1.702a00572ce3eca031f4.jpg",
     "static/media/alex.jpg": "/ats267/static/media/alex.ee43616041d08f0319fc.jpg",
     "static/media/portal3.jpg": "/ats267/static/media/portal3.60e629027627bfeae200.jpg",
@@ -22,10 +21,10 @@
     "static/media/UΛ._Ukrainian_Radio.png": "/ats267/static/media/UΛ._Ukrainian_Radio.b26bb87b4e698a00d245.png",
     "index.html": "/ats267/index.html",
     "main.93a0497a.css.map": "/ats267/static/css/main.93a0497a.css.map",
-    "main.ed6d3760.js.map": "/ats267/static/js/main.ed6d3760.js.map"
+    "main.00fb02a4.js.map": "/ats267/static/js/main.00fb02a4.js.map"
   },
   "entrypoints": [
     "static/css/main.93a0497a.css",
-    "static/js/main.ed6d3760.js"
+    "static/js/main.00fb02a4.js"
   ]
 }
