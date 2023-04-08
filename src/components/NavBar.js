@@ -42,10 +42,10 @@ const NavBar = () => {
                         })}
                     </Nav>
                     <NavDropdown style={{color: 'white'}} title="MORE" id="basic-nav-dropdown">
-                        <NavDropdown.Item href='/shelter'>SHELTER FOR REFUGEES</NavDropdown.Item>
-                        <NavDropdown.Item href="/team">OUR TEAM</NavDropdown.Item>
-                        <NavDropdown.Item href="/projects">OUR PROJECTS</NavDropdown.Item>
-                        <NavDropdown.Item href="/media">MEDIA ABOUT US</NavDropdown.Item>
+                        <NavDropdown.Item><NavLink to='/shelter'>SHELTER FOR REFUGEES</NavLink></NavDropdown.Item>
+                        <NavDropdown.Item><NavLink to="/team">OUR TEAM</NavLink></NavDropdown.Item>
+                        <NavDropdown.Item><NavLink to="/projects">OUR PROJECTS</NavLink></NavDropdown.Item>
+                        <NavDropdown.Item><NavLink to="/media">MEDIA ABOUT US</NavLink></NavDropdown.Item>
                     </NavDropdown>
                 </Navbar.Collapse>
                 <CustomModal />

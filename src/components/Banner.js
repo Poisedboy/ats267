@@ -28,7 +28,7 @@ const Banner = () => {
                     : { height: '100vh', minWidth: '100vw', objectFit: 'cover' }} />
                 <Carousel.Caption style={{ padding: '5px', backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: '20px'}}>
                     <h3>ATS 267</h3>
-                    <p>AN ART SPACE AND A CHARITY FOUNDATION</p>
+                    <p>ART SPACE AND CHARITY FOUNDATION</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

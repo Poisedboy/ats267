@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Image, Row, Col } from "react-bootstrap";
 import Banner from "./Banner";
 import Divider from "./Divider";
-import dividerPicture from '../assets/portal2.jpg';
 import portrait from '../assets/portrait.jpg';
 import building from '../assets/building.jpg';
 import Contacts from "./Contacts";

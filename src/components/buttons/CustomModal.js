@@ -1,13 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import Supporting from "../Supporting";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const CustomModal = () => {
-    const [show, setShow] = useState(false);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
+  const [show, setShow] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleClose = () => {
+    navigate(-1)
+    setShow(false);
+  };
+  const handleShow = () => {
+    navigate('/support-modal');
+    setShow(true);
+  };
+
+  useEffect(() => {
+    if (location.pathname !== '/support-modal') {
+      setShow(false);
+    };
+    if (location.pathname === '/support-modal') {
+      setShow(true);
+    };
+  }, [location.pathname, show]);
+
     return (
       <>
         <Button variant="primary" onClick={handleShow} style={{position: 'fixed', bottom: '10px', right: '30px'}}>
@@ -17,7 +35,6 @@ const CustomModal = () => {
         <Modal
           show={show}
           onHide={handleClose}
-          backdrop="static"
           keyboard={false}
           fullscreen={true}
         >
