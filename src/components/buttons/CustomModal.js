@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import Supporting from "../Supporting";
 import { useLocation, useNavigate } from "react-router-dom";
+import donationPortal from '../../assets/donate.jpg';
 
 const CustomModal = () => {
   const [show, setShow] = useState(false);
@@ -28,8 +29,8 @@ const CustomModal = () => {
 
     return (
       <>
-        <Button variant="primary" onClick={handleShow} style={{position: 'fixed', bottom: '10px', right: '30px'}}>
-          DONATE
+        <Button variant="primary" onClick={handleShow} style={{position: 'fixed', bottom: '10px', right: '30px', color: 'black', background: 'none', border: 'none'}}>
+          <img src={donationPortal} style={{maxWidth: '50px'}} /> DONATE
         </Button>
   
         <Modal
