@@ -1,7 +1,7 @@
 {
   "name": "ats267",
   "version": "0.1.0",
-  "homepage": "https://www.ats267.com.ua",
+  "homepage": "https://ats267.com.ua/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

@@ -28,7 +28,7 @@ const Banner = () => {
                     : { height: '100vh', minWidth: '100vw', objectFit: 'cover' }} />
                 <Carousel.Caption style={{ padding: '5px', backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: '20px'}}>
                     <h3>ATS 267</h3>
-                    <p>ATS 267 is an art space and a charity foundation based in Lviv, Ukraine.</p>
+                    <p>AN ART SPACE AND A CHARITY FOUNDATION</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
