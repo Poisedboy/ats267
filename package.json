@@ -1,7 +1,7 @@
 {
   "name": "ats267",
   "version": "0.1.0",
-  "homepage": "https://ats267.com.ua/",
+  "homepage": "https://poisedboy.github.io/ats267/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
