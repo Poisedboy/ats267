@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ats267/static/css/main.6e1f11fe.css",
-    "main.js": "/ats267/static/js/main.223ee211.js",
+    "main.css": "/ats267/static/css/main.b2c29519.css",
+    "main.js": "/ats267/static/js/main.e283c766.js",
     "static/media/building.jpg": "/ats267/static/media/building.ab0e31a549235a3da931.jpg",
     "static/media/olexander.jpg": "/ats267/static/media/olexander.66055435b796ddc8b2d1.jpg",
     "static/media/launch-zone.jpg": "/ats267/static/media/launch-zone.6e3844c0d2652290de1c.jpg",
@@ -19,11 +19,11 @@
     "static/media/The_Village_logo.png": "/ats267/static/media/The_Village_logo.472a78c73ea354ebff77.png",
     "static/media/UΛ._Ukrainian_Radio.png": "/ats267/static/media/UΛ._Ukrainian_Radio.b26bb87b4e698a00d245.png",
     "index.html": "/ats267/index.html",
-    "main.6e1f11fe.css.map": "/ats267/static/css/main.6e1f11fe.css.map",
-    "main.223ee211.js.map": "/ats267/static/js/main.223ee211.js.map"
+    "main.b2c29519.css.map": "/ats267/static/css/main.b2c29519.css.map",
+    "main.e283c766.js.map": "/ats267/static/js/main.e283c766.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e1f11fe.css",
-    "static/js/main.223ee211.js"
+    "static/css/main.b2c29519.css",
+    "static/js/main.e283c766.js"
   ]
 }
