@@ -5,17 +5,28 @@ import portrait from '../../assets/portrait.jpg';
 import building from '../../assets/building.jpg';
 import Contacts from "../Contacts";
 import './about-us.css';
+import { useSpring, animated } from "@react-spring/web";
 
 const AboutUs = () => {
+    const springRight = useSpring({
+        from: { x: -150 },
+        to: { x: 0 },
+        config: {duration: 300}
+    });
+    const springLeft = useSpring({
+        from: { x: 150 },
+        to: {x: 0}
+    })
+
     return (
         <div className="content">
             <Banner />
             <Container>
                 <div className="box-1">
-                    <div className="portrait">
+                    <animated.div className="portrait" style={{...springRight}}>
                         <img src={portrait} alt='Portrait' />
-                    </div>
-                    <div className="text-1">
+                    </animated.div>
+                    <animated.div className="text-1" style={{...springLeft}}>
                         <p>
                             In December 2020, at the auction, Arsenty Geregey, the current CEO of ATS 267,
                             rented an empty abandoned building of the Ukrtelecom, a government telephone company,
@@ -24,10 +35,10 @@ const AboutUs = () => {
                             the artist and founder of Portalization of space. The artworks of Aleksandr, portals without trunks,
                             have been collected by Arsenty.
                         </p>  
-                    </div>
+                    </animated.div>
                 </div>
                 <div className='box-2'>
-                    <div className="text-2">
+                    <animated.div className="text-2" style={{...springRight}}>
                         <p>
                             Together, they registered a Charity Foundation ATS 267, the main goal of which was
                             helping people to create their art by providing a space, a community of soulmates
@@ -37,10 +48,10 @@ const AboutUs = () => {
                             We changed all sewers, installed a modern heating system, video surveillance and carried out
                             other engineering works.
                         </p>    
-                    </div>
-                    <div className="garden">
+                    </animated.div>
+                    <animated.div className="garden" style={{...springLeft}}>
                         <img src={building} alt="Building" />
-                    </div>
+                    </animated.div>
                 </div>
             </Container>
             <Contacts />
