@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkats267=self.webpackChunkats267||[]).push([[765],{765:function(a,t,s){s.r(t);s(791);var e=s(184);t.default=function(a){var t=a.image,s=a.alt;return(0,e.jsx)("img",{src:t,alt:s})}}}]);
+//# sourceMappingURL=765.2b39c48c.chunk.js.map
