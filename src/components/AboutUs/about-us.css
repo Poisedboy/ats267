@@ -20,6 +20,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.text-1::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 380px;
+    width: 70vw;
     background: #528CCB;
     z-index: -1;
 }
@@ -42,6 +49,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.text-2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 70vw;
+    height: 100%;
     background: #FFF457;
     z-index: -1;
 }
@@ -66,10 +82,16 @@
     }
     .text-2 {
         position: relative;
-        top: -120px;
         width: 100vw;
-        height: 90%;
-        padding-top: 160px;
+    }
+    .text-2::after {
+        content: '';
+        height: 150%;
+        position: absolute;
+        top: -150px;
+        width: 100vw;
+        background: #FFF457;
+        z-index: -1;
     }
     .garden img {
         max-width: 25rem;
@@ -87,13 +109,27 @@
     }
     .text-1 {
         position: relative;
-        top: -120px;
         width: 100vw;
-        height: 90%;
-        padding-top: 160px;
+    }
+    .text-1::after {
+        content: '';
+        height: 150%;
+        width: 100vw;
+        top: -230px;
     }
     .garden img {
         max-width: 18rem;
+    }
+    .text-2 {
+        position: relative;
+        width: 100vw;
+    }
+    .text-2::after {
+        content: '';
+        height: 130%;
+        position: absolute;
+        top: -110px;
+        width: 100vw;
     }
 }
 
