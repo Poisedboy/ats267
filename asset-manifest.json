@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ats267/static/css/main.65bbb9ff.css",
+    "main.css": "/ats267/static/css/main.c87fc1ba.css",
     "main.js": "/ats267/static/js/main.b7a2933e.js",
     "static/media/building.jpg": "/ats267/static/media/building.d26bc1cbdd2587815129.jpg",
     "static/media/olexander.jpg": "/ats267/static/media/olexander.66055435b796ddc8b2d1.jpg",
@@ -18,11 +18,11 @@
     "static/media/The_Village_logo.png": "/ats267/static/media/The_Village_logo.472a78c73ea354ebff77.png",
     "static/media/UΛ._Ukrainian_Radio.png": "/ats267/static/media/UΛ._Ukrainian_Radio.b26bb87b4e698a00d245.png",
     "index.html": "/ats267/index.html",
-    "main.65bbb9ff.css.map": "/ats267/static/css/main.65bbb9ff.css.map",
+    "main.c87fc1ba.css.map": "/ats267/static/css/main.c87fc1ba.css.map",
     "main.b7a2933e.js.map": "/ats267/static/js/main.b7a2933e.js.map"
   },
   "entrypoints": [
-    "static/css/main.65bbb9ff.css",
+    "static/css/main.c87fc1ba.css",
     "static/js/main.b7a2933e.js"
   ]
 }
