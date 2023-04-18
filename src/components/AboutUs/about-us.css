@@ -1,0 +1,99 @@
+.box-1 {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.portrait img {
+    position: relative;
+    max-height: 25rem;
+    max-width: 25rem; 
+    object-fit: cover;
+}
+
+.text-1 {
+    position: absolute;
+    right: 0;
+    height: 380px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #528CCB;
+    z-index: -1;
+}
+
+.text-1 p {
+    width: 21rem;
+}
+
+.box-2 {
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.text-2 {
+    position: absolute;
+    left: 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF457;
+    z-index: -1;
+}
+
+.text-2 p {
+    padding-top: 10px;
+    width: 21rem;
+}
+
+.garden img {
+    max-width: 21rem;
+}
+
+@media screen and (max-width: 991px) {
+    .box-2 {
+        margin-top: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-2 {
+        position: relative;
+        top: -120px;
+        width: 100vw;
+        height: 90%;
+        padding-top: 160px;
+    }
+    .garden img {
+        max-width: 25rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box-1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .portrait img {
+        position: relative;
+    }
+    .text-1 {
+        position: relative;
+        top: -120px;
+        width: 100vw;
+        height: 90%;
+        padding-top: 160px;
+    }
+    .garden img {
+        max-width: 18rem;
+    }
+}
+

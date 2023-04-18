@@ -1,0 +1,16 @@
+.glow {
+    box-shadow: 0 0 5px white;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 4px 4px 5px #528CCB, -4px -4px 5px #FFF457; 
+    }
+    50% {
+        box-shadow: 4px 4px 5px #528CCB, -4px -4px 5px #FFF457,  -3px 3px .7em #F31D2F, 3px -3px .7em #F31D2F;
+    }
+    100% {
+        box-shadow: 4px 4px 5px #528CCB, -4px -4px 5px #FFF457;
+    }
+}

@@ -26,23 +26,23 @@ const Contacts = ({children}) => {
                         style={{maxWidth: '45px', maxHeight: '45px'}}
                     />
                     </a>
-                    <a href='tel: +380 63 391 85 16'>
+                    <a href='tel: +380 63 883 30 57'>
                     <img
                         src={phone}
                         alt='telephone number'
                         style={{maxWidth: '45px', maxHeight: '45px'}}
                     />
                     </a>
-                    <a href='mailto:atc2677@gmail.com'>
+                    <a href='mailto:atc267gov@gmail.com'>
                     <img
                         src={email}
                         alt='mail'
                         style={{maxWidth: '45px', maxHeight: '45px'}}
-                    />
+                    />    
                     </a>
                 </div>
                 <p style={{fontWeight: '700', textAlign: 'center'}}>
-                    Our address: 79052, Subotivska str, building 13A
+                    Our address: 79052, Subotivska str, building 13A,
                     Lviv, Ukraine
                 </p>
             </Container>

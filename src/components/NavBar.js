@@ -2,20 +2,22 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Container, Nav, Image, NavDropdown } from 'react-bootstrap';
 import logo from '../assets/logo.png';
-import CustomModal from "./buttons/CustomModal";
+import CustomModal from "./buttons/CustomModal/CustomModal";
 
 const links = [
-    { name: 'About Us', link: '/' },
+    { id: 0, name: 'About Us', link: '/' },
     { name: 'Art Center', link: '/art-center' },
     { name: 'Humanitarian Center', link: '/humanitarian-center' },
-    // { name: 'Shelter For Refugees', link: '/shelter' },
-    // { name: 'Our Team', link: '/team' },
-    // { name: 'Our Projects', link: '/projects' },
-    // { name: 'Blog', link: '/blog' },
     { name: 'Support Us', link: '/support' },
-    // { name: 'Media About Us', link: '/media' },
     { name: 'Contacts', link: '/contacts' }
 ];
+
+const dropLinks = [
+    { name: 'Shelter for refugees', link: '/shelter' },
+    { name: 'Our Team', link: '/team' },
+    { name: 'Our Projects', link: '/projects' },
+    { name: 'Media About Us', link: '/media' }
+]
 
 const NavBar = () => {
     const [expanded, setExpanded] = useState(false);
@@ -31,21 +33,31 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
                         {links.map(item => {
-                            return <NavLink
-                                key={item.name}
-                                onClick={() => setExpanded(false)}
-                                to={item.link}
-                                style={{color: 'white', textDecoration: 'none', marginRight: '15px', textTransform: 'uppercase'}}
-                            >
-                                {item.name}
-                            </NavLink>
+                            return (
+                                <NavLink
+                                    key={item.name}
+                                    onClick={() => setExpanded(false)}
+                                    to={item.link}
+                                    style={{color: 'white', textDecoration: 'none', marginRight: '15px', textTransform: 'uppercase'}}
+                                >
+                                    {item.name}
+                                </NavLink>
+                            )
                         })}
                     </Nav>
-                    <NavDropdown style={{color: 'white'}} title="MORE" id="basic-nav-dropdown">
-                        <NavDropdown.Item><NavLink to='/shelter'>SHELTER FOR REFUGEES</NavLink></NavDropdown.Item>
-                        <NavDropdown.Item><NavLink to="/team">OUR TEAM</NavLink></NavDropdown.Item>
-                        <NavDropdown.Item><NavLink to="/projects">OUR PROJECTS</NavLink></NavDropdown.Item>
-                        <NavDropdown.Item><NavLink to="/media">MEDIA ABOUT US</NavLink></NavDropdown.Item>
+                    <NavDropdown style={{ color: 'white' }} title="MORE TABS" align='end' id="basic-nav-dropdown">
+                        {dropLinks.map(link => {
+                            return (
+                                <NavDropdown.Item key={link.name}>
+                                    <NavLink
+                                        to={link.link}
+                                        style={{color: 'black', textDecoration: 'none', marginRight: '15px', textTransform: 'uppercase'}}
+                                    >
+                                        {link.name}
+                                    </NavLink>
+                                </NavDropdown.Item>
+                            ) 
+                        })}
                     </NavDropdown>
                 </Navbar.Collapse>
                 <CustomModal />

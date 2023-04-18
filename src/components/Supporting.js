@@ -27,9 +27,14 @@ const Supporting = () => {
             <p>
                 <strong>
                     Card:
-                    5375414130323339
+                    <p>
+                        5375414130323339
+                    </p>
                     https://send.monobank.ua/jar/4uuwvh6sxC
                 </strong>
+            </p>
+            <p>
+                Buy art at the <a href='https://www.instagram.com/tonedgallery/'>Toned Gallery</a> or our merch at the ATS 267.
             </p>
             <hr />
             <p>
@@ -48,7 +53,7 @@ const Supporting = () => {
                 </li>
                 <li>
                     Help us as a volunteer or an expert.
-                    Please fill up this form to join our team for a temporary or a regularly basis;
+                    Please, contact us to join our team for a temporary or a regularly basis;
                 </li>
                 <li>
                     Bring us clothes, food, medicine.

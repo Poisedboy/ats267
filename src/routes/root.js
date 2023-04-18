@@ -4,11 +4,11 @@ import HumanCenter from '../components/HumanCenter';
 import Shelter from '../components/Shelter';
 import Team from '../components/Team';
 import Supporting from '../components/Supporting';
-import AboutUs from '../components/AboutUs';
+import AboutUs from '../components/AboutUs/AboutUs';
 import Contacts from "../components/Contacts";
 import Media from "../components/Media";
 import Projects from "../components/Projects";
-import CustomModal from "../components/buttons/CustomModal";
+import CustomModal from "../components/buttons/CustomModal/CustomModal";
 
 export default function Root() {
     return (

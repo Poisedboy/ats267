@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Image } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import enter from '../assets/enter.jpg';
 import launch from '../assets/launch-zone.jpg';
 import Divider from './Divider';
@@ -14,34 +14,45 @@ const projects = [
 const ArtCenter = () => {
     return (
         <>
-            <Container style={{marginTop: '80px', fontSize: '1.1rem'}}>
+            <Container style={{ marginTop: '80px', fontSize: '1.1rem' }}>
                 <h1 className='d-flex justify-content-center'>Art Center</h1>
-                <Image src={enter} alt='enter' style={{ width: '50%', maxHeight: '300px', objectFit: 'cover', float: 'right', margin: '5px'}} />
-                <p style={{margin: '5px', }}>
-                    When you come into our building, you’ll immediately appear in an art gallery. 
-                    Artworks in ATS 267 are everywhere. The heart of our space is Toned Gallery. 
-                    It’s a project of our CEO, Aleksandr Zykov. 
-                </p>           
+                <Row className="d-flex justify-content-around align-items-center flex-wrap-reverse">
+                    <Col className="d-flex justify-content-center align-items-center">
+                        <p style={{width: '25rem', margin: '10px'}}>
+                            When you come into our building, you’ll immediately appear in an art gallery. 
+                            Artworks in ATS 267 are everywhere. The heart of our space is Toned Gallery. 
+                            It’s a project of our CEO, Aleksandr Zykov. 
+                        </p>
+                    </Col>
+                    <Col className="d-flex justify-content-center align-items-center">
+                        <Image src={enter} alt='enter' style={{ width: '18rem', height: '18rem', objectFit: 'cover' }} />
+                    </Col>
+                </Row>                           
             </Container>
-            <Divider dividerPicture={pictureDivider} />
             <Container style={{ marginTop: '15px' }}>
-                <Image src={launch} alt="launch" style={{ width: '50%', maxHeight: '300px', objectFit: 'cover', float: 'left', margin: '5px'}} />
-                <p>
-                    Aleksandr is a post-modernism artist from Lviv. 
-                    He started his career as an artist in 2016. 
-                    Before that, he has been working as a dental technician, a model, 
-                    but he has been feeling like living not his own life.
-                    And after he concentrated on creating art and made it his main profession,
-                    he found a feeling of harmony. At the moment, Aleksander is combining working as 
-                    an artist and managing ATS 267 and all our processes. 
-                </p>    
+                <Row className="d-flex justify-content-around align-items-center flex-wrap">
+                    <Col className="d-flex justify-content-center align-items-center">
+                        <Image src={launch} alt="launch" style={{ width: '19rem', objectFit: 'cover' }} />
+                    </Col>
+                    <Col className="d-flex justify-content-center align-items-center">
+                        <p style={{width: '21rem', margin: '10px'}}>
+                            Aleksandr is a post-modernism artist from Lviv. 
+                            He started his career as an artist in 2016. 
+                            Before that, he has been working as a dental technician, a model, 
+                            but he has been feeling like living not his own life.
+                            And after he concentrated on creating art and made it his main profession,
+                            he found a feeling of harmony. At the moment, Aleksander is combining working as 
+                            an artist and managing ATS 267 and all our processes. 
+                        </p>
+                    </Col>
+                </Row>    
             </Container>
             <Divider dividerPicture={pictureDivider} />
             <Container>
                 <p>The main art projects of Aleksandr are:</p>
                 <ul>
                     {projects.map(project => {
-                        return <li key={project.id}>{project.project}</li>
+                        return <li key={project.id} style={{marginBottom: '10px'}}>{project.project}</li>
                     })}
                 </ul>
             </Container>
