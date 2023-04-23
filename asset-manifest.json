@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/ats267/static/css/main.f3a2070f.css",
-    "main.js": "/ats267/static/js/main.f3edadf1.js",
+    "main.css": "/ats267/static/css/main.4fd30e37.css",
+    "main.js": "/ats267/static/js/main.e5776737.js",
     "static/js/765.2b39c48c.chunk.js": "/ats267/static/js/765.2b39c48c.chunk.js",
     "static/media/building.jpg": "/ats267/static/media/building.d26bc1cbdd2587815129.jpg",
     "static/media/olexander.jpg": "/ats267/static/media/olexander.66055435b796ddc8b2d1.jpg",
+    "static/media/enter.jpg": "/ats267/static/media/enter.e33eda2f4054904a49b9.jpg",
     "static/media/launch-zone.jpg": "/ats267/static/media/launch-zone.6e3844c0d2652290de1c.jpg",
-    "static/media/enter.jpg": "/ats267/static/media/enter.6b9b696bf3f9a5b2e0f3.jpg",
     "static/media/natalia.jpg": "/ats267/static/media/natalia.4f4294d81da385b78380.jpg",
     "static/media/rrriott.png": "/ats267/static/media/rrriott.2a3fae263ed4585f743f.png",
     "static/media/maryna.png": "/ats267/static/media/maryna.820a420a67065fbb5a85.png",
@@ -14,17 +14,16 @@
     "static/media/logo.png": "/ats267/static/media/logo.3790a81187e030879696.png",
     "static/media/portal1.jpg": "/ats267/static/media/portal1.702a00572ce3eca031f4.jpg",
     "static/media/alex.jpg": "/ats267/static/media/alex.ee43616041d08f0319fc.jpg",
-    "static/media/portal3.jpg": "/ats267/static/media/portal3.60e629027627bfeae200.jpg",
     "static/media/euradio.png": "/ats267/static/media/euradio.e92636ecb19ff0dd4a28.png",
     "static/media/The_Village_logo.png": "/ats267/static/media/The_Village_logo.472a78c73ea354ebff77.png",
     "static/media/UΛ._Ukrainian_Radio.png": "/ats267/static/media/UΛ._Ukrainian_Radio.b26bb87b4e698a00d245.png",
     "index.html": "/ats267/index.html",
-    "main.f3a2070f.css.map": "/ats267/static/css/main.f3a2070f.css.map",
-    "main.f3edadf1.js.map": "/ats267/static/js/main.f3edadf1.js.map",
+    "main.4fd30e37.css.map": "/ats267/static/css/main.4fd30e37.css.map",
+    "main.e5776737.js.map": "/ats267/static/js/main.e5776737.js.map",
     "765.2b39c48c.chunk.js.map": "/ats267/static/js/765.2b39c48c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3a2070f.css",
-    "static/js/main.f3edadf1.js"
+    "static/css/main.4fd30e37.css",
+    "static/js/main.e5776737.js"
   ]
 }
