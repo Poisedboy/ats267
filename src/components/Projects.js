@@ -19,7 +19,7 @@ const Projects = () => {
     return (
         <>
             <Container>
-                <h1 style={{ marginTop: '80px', textAlign: 'center' }}>Projects</h1>
+                <h1 style={{ marginTop: '80px', textAlign: 'center' }}>PROJECTS</h1>
                 <p>
                     The main goals of ATS 267 at the current moment are spreading art and
                     helping people affected by the russian aggression. 

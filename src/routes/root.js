@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import ArtCenter from '../components/ArtCenter';
+import ArtCenter from '../components/ArtCenter/ArtCenter';
 import HumanCenter from '../components/HumanCenter';
 import Shelter from '../components/Shelter';
 import Team from '../components/Team';

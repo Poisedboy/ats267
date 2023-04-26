@@ -6,16 +6,18 @@ import building from '../../assets/building.jpg';
 import Contacts from "../Contacts";
 import './about-us.css';
 import { useSpring, animated } from "@react-spring/web";
+const LazyImage = React.lazy(() => import('./LazyImage'));
 
 const AboutUs = () => {
     const springRight = useSpring({
         from: { x: -150 },
         to: { x: 0 },
-        config: {duration: 300}
+        config: {duration: 500}
     });
     const springLeft = useSpring({
         from: { x: 150 },
-        to: {x: 0}
+        to: { x: 0 },
+        config: {duration: 500}
     })
 
     return (
@@ -24,9 +26,11 @@ const AboutUs = () => {
             <Container>
                 <div className="box-1">
                     <animated.div className="portrait" style={{...springRight}}>
-                        <img src={portrait} alt='Portrait' />
+                        <React.Suspense fallback={<div>LOADING...</div>}>
+                            <LazyImage image={portrait} alt='Portrait' />
+                        </React.Suspense>
                     </animated.div>
-                    <animated.div className="text-1" style={{...springLeft}}>
+                    <animated.div className="text-1" style={{...springLeft, zIndex: '-1' }}>
                         <p>
                             In December 2020, at the auction, Arsenty Geregey, the current CEO of ATS 267,
                             rented an empty abandoned building of the Ukrtelecom, a government telephone company,
@@ -38,7 +42,7 @@ const AboutUs = () => {
                     </animated.div>
                 </div>
                 <div className='box-2'>
-                    <animated.div className="text-2" style={{...springRight}}>
+                    <animated.div className="text-2" style={{...springRight, zIndex: '-1' }}>
                         <p>
                             Together, they registered a Charity Foundation ATS 267, the main goal of which was
                             helping people to create their art by providing a space, a community of soulmates
@@ -50,7 +54,9 @@ const AboutUs = () => {
                         </p>    
                     </animated.div>
                     <animated.div className="garden" style={{...springLeft}}>
-                        <img src={building} alt="Building" />
+                        <React.Suspense fallback={<div>Loading...</div>}>
+                            <LazyImage image={building} alt='Building' />
+                        </React.Suspense>
                     </animated.div>
                 </div>
             </Container>

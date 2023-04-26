@@ -10,7 +10,7 @@ const HumanCenter = () => {
         <div ref={ref}>
             <Collapse in={isVisible} dimension='height'>
                 <Container style={{ marginTop: '85px' }}>
-                    <h1 className='d-flex justify-content-center'>Humanitarian Center</h1>
+                    <h1 className='d-flex justify-content-center'>HUMANITARIAN CENTER</h1>
                     <p>The main direction of us as a humanitarian center is sending clothes to people in need.</p>
                     <p>
                         We have a large second-hand clothing warehouse, which we regularly sort and send to

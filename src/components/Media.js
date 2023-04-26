@@ -22,7 +22,7 @@ const Media = () => {
     return (
         <>
             <Container style={{ marginTop: '80px' }}>
-                <h1 style={{textAlign: 'center'}}>Media</h1>
+                <h1 style={{textAlign: 'center'}}>MEDIA</h1>
                 <h4 style={{textAlign: 'center'}}>An art space became a shelter for refugees • Ukraїner</h4>
                 <iframe
                     height={mobile ? '215' : '315'}

@@ -10,7 +10,7 @@ const Shelter = () => {
         <div ref={ref}>
             <Collapse in={isVisible} dimension='height'>
                 <Container style={{marginTop: '85px'}}>
-                    <h1 className='d-flex justify-content-center'>Shelter For Refugees</h1>
+                    <h1 className='d-flex justify-content-center'>SHELTER FOR REFUGEES</h1>
                     <p>
                         Due to the russian invasion of Ukraine we have transformed our space and  opened doors as a shelter for refugees.
                     </p>

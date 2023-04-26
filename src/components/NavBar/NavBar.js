@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Navbar, Container, Nav, Image, NavDropdown } from 'react-bootstrap';
-import logo from '../assets/logo.png';
-import CustomModal from "./buttons/CustomModal/CustomModal";
+import { Navbar, Container, Image, NavDropdown } from 'react-bootstrap';
+import logo from '../../assets/logo.png';
+import CustomModal from "../buttons/CustomModal/CustomModal";
+import './nav.css';
 
 const links = [
-    { id: 0, name: 'About Us', link: '/' },
+    { name: 'About Us', link: '/' },
     { name: 'Art Center', link: '/art-center' },
     { name: 'Humanitarian Center', link: '/humanitarian-center' },
     { name: 'Support Us', link: '/support' },
@@ -31,20 +32,19 @@ const NavBar = () => {
                 </NavLink>
                 <Navbar.Toggle onClick={() => setExpanded(expanded ? false : 'expanded')} aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                    <Nav>
+                    <div className="nav">
                         {links.map(item => {
                             return (
                                 <NavLink
                                     key={item.name}
                                     onClick={() => setExpanded(false)}
                                     to={item.link}
-                                    style={{color: 'white', textDecoration: 'none', marginRight: '15px', textTransform: 'uppercase'}}
                                 >
                                     {item.name}
                                 </NavLink>
                             )
                         })}
-                    </Nav>
+                    </div>
                     <NavDropdown style={{ color: 'white' }} title="MORE TABS" align='end' id="basic-nav-dropdown">
                         {dropLinks.map(link => {
                             return (

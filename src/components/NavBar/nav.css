@@ -1,0 +1,17 @@
+.nav > * {
+    text-decoration: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav > *:nth-child(4) {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.nav > *:nth-child(4):hover {
+    background: #53DF83;
+}

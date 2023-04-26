@@ -1,48 +1,48 @@
-.box-1 {
-    margin-top: 20px;
+.box-art-1 {
+    margin-top: 70px;
     margin-bottom: 70px;
     display: flex;
     align-items: center;
 }
 
-.portrait img {
+.enter img {
     position: relative;
-    max-height: 25rem;
-    max-width: 25rem; 
+    max-width: 18rem; 
     object-fit: cover;
 }
 
-.text-1 {
+.text-art-1 {
     position: absolute;
+    padding: 20px;
     right: 0;
-    height: 380px;
     width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.text-1::after {
+.text-art-1::after {
     content: '';
     position: absolute;
     right: 0;
-    height: 380px;
+    height: 100%;
     width: 85vw;
     background: #E7F1CF;
     z-index: -1;
 }
 
-.text-1 p {
+.text-art-1 p {
     width: 21rem;
 }
 
-.box-2 {
+.box-art-2 {
     margin-top: 70px;
+    padding: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.text-2 {
+.text-art-2 {
     position: absolute;
     left: 0;
     width: 70%;
@@ -52,7 +52,7 @@
     
 }
 
-.text-2::after {
+.text-art-2::after {
     content: '';
     position: absolute;
     left: 0;
@@ -62,73 +62,76 @@
     z-index: -1;
 }
 
-.text-2 p {
+.text-art-2 p {
     padding-top: 10px;
     width: 21rem;
 }
 
-.garden img {
+.launch img {
     max-width: 21rem;
 }
 
 @media screen and (max-width: 991px) {
-    .box-2 {
+    .box-art-2 {
         margin-top: 0;
         margin-top: 0;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .text-2 {
+    .text-art-2 {
         position: relative;
         width: 100vw;
     }
-    .text-2::after {
+    .text-art-2::after {
         content: '';
         height: 150%;
         position: absolute;
-        top: -150px;
+        top: -130px;
         width: 100vw;
         background: #F4EDF6;
         z-index: -1;
     }
-    .garden img {
+    .launch img {
         max-width: 25rem;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .box-1 {
+    .box-art-1 {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-bottom: 0;
     }
-    .portrait img {
+    .enter img {
         position: relative;
     }
-    .text-1 {
+    .text-art-1 {
         position: relative;
+        display: flex;
+        align-items: flex-start;
         width: 100vw;
+        height: 250px;
     }
-    .text-1::after {
+    .text-art-1::after {
         content: '';
-        height: 150%;
+        height: 120%;
         width: 100vw;
-        top: -230px;
+        top: -150px;
     }
-    .garden img {
+    .launch img {
         max-width: 18rem;
     }
-    .text-2 {
+    .text-art-2 {
         position: relative;
         width: 100vw;
     }
-    .text-2::after {
+    .text-art-2::after {
         content: '';
-        height: 130%;
+        height: 135%;
         position: absolute;
-        top: -110px;
+        top: -100px;
         width: 100vw;
     }
 }

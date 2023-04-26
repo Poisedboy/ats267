@@ -20,7 +20,7 @@ const Team = () => {
     return (
         <>
             <Container style={{ marginTop: '85px' }}>
-                <h1 className='d-flex justify-content-center'>Our Team</h1>
+                <h1 className='d-flex justify-content-center'>OUR TEAM</h1>
                 <div className='d-flex flex-wrap justify-content-center'>
                     {team.map(m => {
                         return (
