@@ -1,12 +1,13 @@
 import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 import instagramIcon from '../assets/instagram.png';
-import rrriott from '../assets/team/rrriott.png';
+import rrriott from '../assets/team/rrriott.jpg';
 import olexander from '../assets/team/olexander.jpg';
 import natalia from '../assets/team/natalia.jpg';
-import maryna from '../assets/team/maryna.png';
+import maryna from '../assets/team/maryna.jpg';
 import alex from '../assets/team/alex.jpg';
 import TeamOffCanvas from './buttons/TeamModal';
+import NavBar from './NavBar/NavBar';
 
 const team = [
     { id: 1, name: 'Arsenty', position: 'Founder and co-participant of CO \'CF\' ATS 267, member of administration', instagram: 'https://www.instagram.com/rrriott/', photo: rrriott, text: 'Before the war began, Arsenty went on a big trip to Asia. At the moment, he supports our activity and the Ukrainian Armed Forces remotely with donations.' },
@@ -19,20 +20,21 @@ const team = [
 const Team = () => {
     return (
         <>
+            <NavBar />
             <Container style={{ marginTop: '85px' }}>
                 <h1 className='d-flex justify-content-center'>OUR TEAM</h1>
                 <div className='d-flex flex-wrap justify-content-center'>
                     {team.map(m => {
                         return (
-                            <Card key={m.id} style={{width: '18rem', marginRight: '10px', marginBottom: '10px'}}>
-                                <Card.Img style={{height: '18rem', objectFit: 'cover'}} src={m.photo} />
-                                <Card.Title style={{textAlign: 'center'}}>{m.name}</Card.Title>
-                                <div className='d-flex justify-content-around' style={{margin: '5px'}}>
+                            <Card key={m.id} style={{ width: '18rem', marginRight: '10px', marginBottom: '10px' }}>
+                                <Card.Img style={{ height: '18rem', objectFit: 'cover' }} src={m.photo} />
+                                <Card.Title style={{ textAlign: 'center' }}>{m.name}</Card.Title>
+                                <div className='d-flex justify-content-around' style={{ margin: '5px' }}>
                                     <a href={m.instagram}>
                                         <img
                                             src={instagramIcon}
                                             alt='instagram'
-                                            style={{maxWidth: '45px', maxHeight: '45px'}}
+                                            style={{ maxWidth: '45px', maxHeight: '45px' }}
                                         />
                                     </a>
                                     <TeamOffCanvas

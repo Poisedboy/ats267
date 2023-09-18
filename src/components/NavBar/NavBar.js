@@ -8,6 +8,7 @@ import './nav.css';
 const links = [
     { name: 'About Us', link: '/' },
     { name: 'Art Center', link: '/art-center' },
+    { name: 'Blog', link: '/blog' },
     { name: 'Humanitarian Center', link: '/humanitarian-center' },
     { name: 'Support Us', link: '/support' },
     { name: 'Contacts', link: '/contacts' }
@@ -51,12 +52,13 @@ const NavBar = () => {
                                 <NavDropdown.Item key={link.name}>
                                     <NavLink
                                         to={link.link}
-                                        style={{color: 'black', textDecoration: 'none', marginRight: '15px', textTransform: 'uppercase'}}
+                                        onClick={() => setExpanded(false)}
+                                        style={{ color: 'black', textDecoration: 'none', marginRight: '15px', textTransform: 'uppercase' }}
                                     >
                                         {link.name}
                                     </NavLink>
                                 </NavDropdown.Item>
-                            ) 
+                            )
                         })}
                     </NavDropdown>
                 </Navbar.Collapse>

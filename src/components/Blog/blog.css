@@ -1,0 +1,44 @@
+
+.posts-container {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caption {
+    text-align: center;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media > * {
+    width: 100%;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 678px) {
+    .posts-container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .media > * {
+        width: 90%;
+    }
+}

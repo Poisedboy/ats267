@@ -6,31 +6,33 @@ import building from '../../assets/building.jpg';
 import Contacts from "../Contacts";
 import './about-us.css';
 import { useSpring, animated } from "@react-spring/web";
+import NavBar from '../NavBar/NavBar';
 const LazyImage = React.lazy(() => import('./LazyImage'));
 
 const AboutUs = () => {
     const springRight = useSpring({
         from: { x: -150 },
         to: { x: 0 },
-        config: {duration: 500}
+        config: { duration: 500 }
     });
     const springLeft = useSpring({
         from: { x: 150 },
         to: { x: 0 },
-        config: {duration: 500}
+        config: { duration: 500 }
     })
 
     return (
         <div className="content">
+            <NavBar />
             <Banner />
             <Container>
                 <div className="box-1">
-                    <animated.div className="portrait" style={{...springRight}}>
+                    <animated.div className="portrait" style={{ ...springRight }}>
                         <React.Suspense fallback={<div>LOADING...</div>}>
                             <LazyImage image={portrait} alt='Portrait' />
                         </React.Suspense>
                     </animated.div>
-                    <animated.div className="text-1" style={{...springLeft, zIndex: '-1' }}>
+                    <animated.div className="text-1" style={{ ...springLeft, zIndex: '-1' }}>
                         <p>
                             In December 2020, at the auction, Arsenty Geregey, the current CEO of ATS 267,
                             rented an empty abandoned building of the Ukrtelecom, a government telephone company,
@@ -38,11 +40,11 @@ const AboutUs = () => {
                             and creative people. To bring this idea to life, Arsenty made an offer of cooperation to Aleksandr Zykov,
                             the artist and founder of Portalization of space. The artworks of Aleksandr, portals without trunks,
                             have been collected by Arsenty.
-                        </p>  
+                        </p>
                     </animated.div>
                 </div>
                 <div className='box-2'>
-                    <animated.div className="text-2" style={{...springRight, zIndex: '-1' }}>
+                    <animated.div className="text-2" style={{ ...springRight, zIndex: '-1' }}>
                         <p>
                             Together, they registered a Charity Foundation ATS 267, the main goal of which was
                             helping people to create their art by providing a space, a community of soulmates
@@ -51,9 +53,9 @@ const AboutUs = () => {
                             At the same time with painting the walls, we started a makeover of this building.
                             We changed all sewers, installed a modern heating system, video surveillance and carried out
                             other engineering works.
-                        </p>    
+                        </p>
                     </animated.div>
-                    <animated.div className="garden" style={{...springLeft}}>
+                    <animated.div className="garden" style={{ ...springLeft }}>
                         <React.Suspense fallback={<div>Loading...</div>}>
                             <LazyImage image={building} alt='Building' />
                         </React.Suspense>

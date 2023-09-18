@@ -1,0 +1,13 @@
+.show-btn {
+    margin-left: 10px;
+    padding: 0px 30px;
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #53DF83;
+}
+
+.frame {
+    padding: 3px;
+    border-radius: 5px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import NavBar from "./NavBar/NavBar";
 
 const currentProjects = [
     { id: 1, name: 'Humanitark’a party' },
@@ -18,11 +19,12 @@ const plannedProjects = [
 const Projects = () => {
     return (
         <>
+            <NavBar />
             <Container>
                 <h1 style={{ marginTop: '80px', textAlign: 'center' }}>PROJECTS</h1>
                 <p>
                     The main goals of ATS 267 at the current moment are spreading art and
-                    helping people affected by the russian aggression. 
+                    helping people affected by the russian aggression.
                 </p>
                 <p>Current projects:</p>
                 <ul>

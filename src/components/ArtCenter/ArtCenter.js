@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import NavBar from '../NavBar/NavBar';
 import enter from '../../assets/enter.jpg';
 import launch from '../../assets/launch-zone.jpg';
 import './art-center.css';
@@ -7,18 +8,19 @@ import './art-center.css';
 const ArtCenter = () => {
     return (
         <>
-            <h1 className='d-flex justify-content-center' style={{marginTop: '80px'}}>ART CENTER</h1>
+            <NavBar />
+            <h1 className='d-flex justify-content-center' style={{ marginTop: '80px' }}>ART CENTER</h1>
             <Container>
                 <div className='box-art-1'>
                     <div className='text-art-1'>
                         <p>
-                            When you come into our building, you’ll immediately appear in an art gallery. 
-                            Artworks in ATS 267 are everywhere. The heart of our space is <a href='https://www.instagram.com/tonedgallery/'>Toned Gallery</a>. 
-                            It’s a project of our CEO, Aleksandr Zykov. 
+                            When you come into our building, you’ll immediately appear in an art gallery.
+                            Artworks in ATS 267 are everywhere. The heart of our space is <a href='https://www.instagram.com/tonedgallery/'>Toned Gallery</a>.
+                            It’s a project of our CEO, Aleksandr Zykov.
                         </p>
                     </div>
                     <div className='enter'>
-                        <img src={enter} alt='enter'  />
+                        <img src={enter} alt='enter' />
                     </div>
                 </div>
                 <div className='box-art-2'>
@@ -27,16 +29,16 @@ const ArtCenter = () => {
                     </div>
                     <div className='text-art-2'>
                         <p>
-                            Aleksandr is a post-modernism artist from Lviv. 
-                            He started his career as an artist in 2016. 
-                            Before that, he has been working as a dental technician, a model, 
+                            Aleksandr is a post-modernism artist from Lviv.
+                            He started his career as an artist in 2016.
+                            Before that, he has been working as a dental technician, a model,
                             but he has been feeling like living not his own life.
                             And after he concentrated on creating art and made it his main profession,
-                            he found a feeling of harmony. At the moment, Aleksander is combining working as 
-                            an artist and managing ATS 267 and all our processes. 
+                            he found a feeling of harmony. At the moment, Aleksander is combining working as
+                            an artist and managing ATS 267 and all our processes.
                         </p>
                     </div>
-                </div>    
+                </div>
             </Container>
             <Container>
                 <p>The main art projects of Aleksandr are:</p>
@@ -47,7 +49,7 @@ const ArtCenter = () => {
                 </ul>
             </Container>
         </>
-        
+
     );
 };
 

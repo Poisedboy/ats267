@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Container, Collapse } from 'react-bootstrap';
+import NavBar from './NavBar/NavBar';
 import useOnScreen from '../hooks/useRef';
 
 const HumanCenter = () => {
@@ -8,6 +9,7 @@ const HumanCenter = () => {
 
     return (
         <div ref={ref}>
+            <NavBar />
             <Collapse in={isVisible} dimension='height'>
                 <Container style={{ marginTop: '85px' }}>
                     <h1 className='d-flex justify-content-center'>HUMANITARIAN CENTER</h1>

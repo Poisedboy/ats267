@@ -3,6 +3,7 @@ import { Card, CardImg, Container } from 'react-bootstrap';
 import village from '../assets/logo/The_Village_logo.png';
 import euroradio from '../assets/logo/euradio.png';
 import uaradio from '../assets/logo/UΛ._Ukrainian_Radio.png';
+import NavBar from './NavBar/NavBar';
 
 const mediaLinks = [
     { id: 1, name: 'The Village Ukraine', link: 'https://www.the-village.com.ua/village/city/how-it-works-city/329615-shelter-dlya-pereselentsiv-v-artprostori-na-teritoriyi-ats-pro-lizhka-z-odyagu-ta-gumanitarka-party', text: 'How it works: A shelter for refugees in an art space on an ex automatic telephone exchange. About beds from clothing and Humanitar’ka party.', logo: village },
@@ -18,12 +19,13 @@ const Media = () => {
             setMobile(!mobile);
         }
     }, []);
-    
+
     return (
         <>
+            <NavBar />
             <Container style={{ marginTop: '80px' }}>
-                <h1 style={{textAlign: 'center'}}>MEDIA</h1>
-                <h4 style={{textAlign: 'center'}}>An art space became a shelter for refugees • Ukraїner</h4>
+                <h1 style={{ textAlign: 'center' }}>MEDIA</h1>
+                <h4 style={{ textAlign: 'center' }}>An art space became a shelter for refugees • Ukraїner</h4>
                 <iframe
                     height={mobile ? '215' : '315'}
                     width='100%'
@@ -40,9 +42,9 @@ const Media = () => {
                 <div className='d-flex justify-content-around align-items-center flex-wrap'>
                     {mediaLinks.map(aticle => {
                         return (
-                            <Card key={aticle.id} style={{ margin: '10px', border: 'none'}}>
-                                <a href={aticle.link}><CardImg src={aticle.logo} className='sm' style={{width: '250px', height: '100px', objectFit: 'contain'}}></CardImg></a>
-                                <Card.Title style={{textAlign: 'center'}}>{aticle.name}</Card.Title>
+                            <Card key={aticle.id} style={{ margin: '10px', border: 'none' }}>
+                                <a href={aticle.link}><CardImg src={aticle.logo} className='sm' style={{ width: '250px', height: '100px', objectFit: 'contain' }}></CardImg></a>
+                                <Card.Title style={{ textAlign: 'center' }}>{aticle.name}</Card.Title>
                             </Card>
                         )
                     })}
