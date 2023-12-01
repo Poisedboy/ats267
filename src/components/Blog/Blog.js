@@ -7,11 +7,14 @@ import { Link } from 'react-router-dom';
 
 const Blog = () => {
     const [posts, setPosts] = useState([]);
-    console.log(posts)
     useEffect(() => {
         async function fetchData() {
-            const data = await getPosts();
-            setPosts(data);
+            try {
+                const data = await getPosts();
+                setPosts(data);
+            } catch (e) {
+                console.log("CUSTOM", e.message)
+            }
         }
         fetchData();
     }, [setPosts]);

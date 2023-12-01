@@ -55,7 +55,7 @@ export const router = createBrowserRouter([
   {
     path: 'support-modal',
     element: <CustomModal />
-  }
+  },
 ]);
 
 // export default function Root() {

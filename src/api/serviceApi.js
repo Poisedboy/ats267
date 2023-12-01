@@ -1,7 +1,7 @@
 
 export const getPosts = async () => {
     try {
-        const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=IGQVJWN1lTcmV0WkRmc2dTRkN0cVh4VE92ZADc3V3dSZADJvbmx0bkhxZAjQzMzZAFSVI0VGVMLThEZAnRXZAzE0UHRYbGx0V21uNXNuMmlLWG42WXRWYlRvZAk9taVdSSE5DbGptdlNXVDVIdERjTVJsLXN4LQZDZD`
+        const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=IGQWRQRFJjX19MZAnFReFdDUy1NWjFRcXlXN1RVb3J1NzRaWXVHYjI3dmIzS3NPZA3cxLWQyV1lCQzV3NHBPSDF3ME90NWFpaWZAuMllPWV9uM2xoMnVtN0JHaVVERG1abjhpREY1a1JNUWFxWDdJdGpVbkpnNkdkZAFkZD`
         const response = await fetch(url)
         // if (!response.ok) {
         //     throw new Error('Network response was not ok!!!')
